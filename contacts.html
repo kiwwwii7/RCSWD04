@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <a href="./about.html">About</a>
+      <img src="icons/about.png" alt="about" width="20px">
+      <br>
+      <a href="./index.html">Home</a>
+      <img src="icons/home.png" alt="home" width="20px">
+    </nav>
+    <div>
+      <h1>Contact us</h1>
+      <form action="">
+        <label for="name">Name</label>
+        <input type="text" name="name" required />
+
+        <label for="password">Password</label>
+        <input type="password" name="password" required />
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input type="text" name="email" required />
+
+        <label for="age">Your age</label>
+        <select name="age" id="">
+          <option value="1">18-24</option>
+          <option value="2">25-34</option>
+          <option value="3">35-50</option>
+        </select>
+        <br />
+        <br />
+        <h3>Your gender:</h3>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="male" />
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female" />
+        <br />
+        <br />
+        <div class="checkbox-container">
+          <input type="checkbox" name="rules" />
+          <p>I am 18 years of age or older and agree to the terms and Privacy Policy.</p>
+        </div>
+        <br>
+        <br>
+        <label for="rating">Rate our page (1-10):</label>
+        <input type="range" name="rating" min="1" max="10" oninput="updateRating(this.value)">
+        <span id="ratingValue">5</span>
+      </form>
+    </div>
+
+    <script>
+        function updateRating(value) {
+          document.getElementById('ratingValue').textContent = value;
+        }
+      </script>
+  </body>
+</html>
