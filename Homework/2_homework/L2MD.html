@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksti</title>
+    <style>
+        article h2 {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+            color: rgb(66, 121, 122);
+            width: 500px;
+        }
+
+        article img {
+            width: 500px;
+            border-radius: 5px;
+            border: 2px rgb(66, 121, 122) solid;
+        }
+
+        article p {
+            width: 500px;
+        }
+
+        article p::after {
+            content: "...";
+        }
+
+        .container * {
+            margin: 0;
+        }
+
+        .container h1 {
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        .container p{
+            display: none;
+        }
+
+        .container h6 {
+            font-size: 20px;
+        }
+
+        .container span {
+            display: block;
+            text-decoration: underline;
+            padding-left: 20px;
+            cursor: pointer;
+        }
+
+        .container span::before {
+            content: '•';
+            left: 0;
+            font-size: 20px;
+            position: absolute;
+            margin-left: 20px;
+        }
+
+        .article {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        article {
+            flex: 0 0 32%;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../1_homework/about.html">About</a>
+        <a href="../1_homework/index.html">Index</a>
+        <a href="../1_homework/contacts.html">Contacts</a>
+    </header>
+    <section class="container">
+        <h1>Raksti</h1>
+        <p>Kas zemāk esošajiem rakstiem ir kopīgs?</p>
+        <div>
+            <h6>Categories</h6>
+            <div>
+                <span>Tragedy</span>
+                <span>Drama</span>
+                <span>Historical</span>
+            </div>
+        </div>
+    </section>
+    <section class="article">
+        <article>
+            <h2>Trump Org. employee testifies in criminal hush money trial</h2>
+            <img src="images/trump.jpg" alt="">
+            <p>On the stand: Deborah Tarasoff, who works in the Trump Organization's accounting department, is being cross-examined by defense attorney Todd Blanche in Donald Trump's New York hush money trial.</p>
+            <a href="https://edition.cnn.com/politics/live-news/trump-hush-money-trial-05-06-24/index.html" target="_blank">Read full article</a>
+        </article>
+        <article>
+            <h2>Hamas says it has accepted a ceasefire proposal</h2>
+            <img src="images/hamas.jpg" alt="">
+            <p>Hamas has accepted a ceasefire deal proposed by Egypt and Qatar, according to Ismail Haniyeh, the head of its political wing. It’s unclear whether Hamas has agreed to the proposal as outlined last week, or a revised version of it.</p>
+            <a href="https://edition.cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-05-06-24-intl-hnk/index.html" target="_blank">Read full article</a>
+        </article>
+        <article>
+            <h2>Man or bear? A viral question has spawned scary responses</h2>
+            <img src="images/bear.webp" alt="">
+            <p>Another day, another hypothetical scenario tearing people apart on social media. However, this cultural discourse has some sharp teeth.</p>
+            <a href="https://edition.cnn.com/2024/05/06/us/man-bear-safety-tiktok-question-cec/index.html" target="_blank">Read full article</a>
+        </article>
+        <article>
+            <h2>2024 Met Gala: Everything to know about fashion’s annual soiree</h2>
+            <img src="images/fashion.webp" alt="">
+            <p>Fashion’s biggest night out — hosted at the Metropolitan Museum of Art in New York each year on the first Monday of May — is both a forever-evolving spectacle and a carefully crafted event.</p>
+            <a href="https://edition.cnn.com/2024/05/06/style/met-gala-2024-theme-hosts-guests/index.html" target="_blank">Read full article</a>
+        </article>
+        <article>
+            <h2>Genes known to increase the risk of Alzheimer’s may actually be an inherited form of the disorder, researchers say</h2>
+            <img src="images/alzheimers.webp" alt="">
+            <p>Alzheimer’s disease may be inherited more often than previously known, according to a new study that paints a clearer picture of a gene long known to be linked to the common form of dementia.</p>
+            <a href="https://edition.cnn.com/2024/05/06/health/alzheimers-apoe4-gene-risk/index.html" target="_blank">Read full article</a>
+        </article>
+        <article>
+            <h2>French bakers claim world record for longest baguette</h2>
+            <img src="images/baguette.jpg" alt="">
+            <p>Baguettes are a notable component of France’s culinary scene. Now, French bakers have taken the record for the longest baguette ever made.</p>
+            <a href="https://edition.cnn.com/2024/05/06/travel/longest-baguette-france-intl-scli/index.html" target="_blank">Read full article</a>
+        </article>
+    </section>
+    <footer>
+        <blockquote>"Life isn't about finding yourself. Life is about creating yourself. At every moment, you are given the opportunity to step forward into growth or to step back into safety. Choose wisely, for the path you pick will shape not just your future but the very essence of who you are." — Inspired by George Bernard Shaw</blockquote>
+        <div>&copy; 2024</div>
+    </footer>
+</body>
+</html>
